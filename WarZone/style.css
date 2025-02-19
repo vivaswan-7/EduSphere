@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background: rgba(223, 9, 209, 0.8);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#home {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/8613083/pexels-photo-8613083.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1; 
+}
+
+#home h1, #home p, #home .explore-link {
+    position: relative;
+    z-index: 2;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFEB3B;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    max-width: 700px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#home .explore-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #4CAF50;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#home .explore-link:hover {
+    background: #388E3C;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#eduai-mentor {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#eduai-mentor h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#eduai-mentor p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+#eduai-mentor ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#eduai-mentor ul li {
+    font-size: 1.1rem;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#eduai-mentor ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+#eduai-mentor .explore-link {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #ff9800;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#eduai-mentor .explore-link:hover {
+    background: #e68900;
+    transform: scale(1.1);
+}
+
+#career-ai {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#career-ai h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4B0082;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#career-ai p {
+    font-size: 1.3rem;
+    color: #fff;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+#career-ai ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#career-ai ul li {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#career-ai ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+#career-ai .explore-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4B0082; 
+    background: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#career-ai .explore-link:hover {
+    background: #4B0082;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#skillforge {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFEB3B, #FFA500); 
+    color: #4B0082; 
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 0; 
+    margin: 0;
+    width: 100%; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#skillforge h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4B0082; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#skillforge p {
+    font-size: 1.3rem;
+    color: #fff;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.skillforge-marquee {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skillforge-marquee ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    animation: marquee 25s linear infinite;
+    width: max-content; /
+}
+
+
+.skillforge-marquee ul li {
+    font-size: 1.2rem;
+    background: #fff;
+    padding: 15px 20px;
+    min-width: 250px; 
+    display: inline-block;
+    border-radius: 10px;
+    color: #4B0082; 
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.skillforge-marquee ul li:hover {
+    background: #4B0082;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+#skillforge .explore-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4B0082;
+    background: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#skillforge .explore-link:hover {
+    background: #4B0082;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#global-flags {
+    width: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 50px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#global-flags h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+#global-flags p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flags-marquee {
+    display: flex;
+    gap: 20px;
+    animation: marquee 20s linear infinite;
+    width: 200%;
+}
+
+.flags-marquee img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.flags-marquee img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+#educonnect {
+    background-color: #e3f2fd; 
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#educonnect h2 {
+    font-size: 2.5rem;
+    color: #ff6f61; 
+    margin-bottom: 25px;
+}
+
+#educonnect p {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.educonnect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.educonnect-box {
+    background-color: #ffcc80; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.educonnect-box:hover {
+    transform: translateY(-8px);
+    background-color: #ff8a65; 
+}
+
+.educonnect-box h3 {
+    font-size: 1.7rem;
+    color: #0077b6; 
+    margin-bottom: 15px;
+}
+
+.educonnect-box p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .educonnect-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.educonnect-explore {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #ff6f61, #ff8a65); 
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.educonnect-explore:hover {
+    background: linear-gradient(135deg, #ff8a65, #ff6f61);
+    transform: translateY(-3px);
+    box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+#immersive-learning {
+    position: relative;
+    padding: 80px 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#immersive-learning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://wallpaperaccess.com/full/3079568.jpg') no-repeat center center/cover;
+    opacity: 0.3; 
+    z-index: -1;
+}
+
+#immersive-learning .content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#immersive-learning h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#immersive-learning p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#immersive-learning ul {
+    text-align: left;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+#immersive-learning ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#immersive-learning ul li::before {
+    content: '✓';
+    color: #ffcc00; 
+    position: absolute;
+    left: 0;
+}
+
+#immersive-learning .explore-link {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff6f61; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#immersive-learning .explore-link:hover {
+    background-color: #ff8a65; 
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-logo, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    color: #FDCB58;
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #FDCB58;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #FDCB58;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social .social-icons a {
+    color: #FDCB58;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
