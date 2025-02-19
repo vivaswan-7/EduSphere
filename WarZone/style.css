@@ -534,36 +534,37 @@ section {
     background-color: #ff8a65; 
 }
 
+
 footer {
-    background: #222;
-    color: #fff;
-    padding: 40px 0;
+    background: linear-gradient(135deg, #004aad, #00bcd4);
+    color: white;
+    padding: 40px 20px;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.footer-logo, .footer-links, .footer-contact, .footer-social {
+.footer-container div {
     flex: 1;
-    min-width: 200px;
-    margin: 10px;
-    text-align: center;
+    min-width: 250px;
+    margin: 20px;
 }
 
 .footer-logo h2 {
-    font-size: 1.8rem;
-    color: #FDCB58;
+    font-size: 2rem;
+    color: #ffcc00; 
 }
 
-.footer-links h3, .footer-contact h3, .footer-social h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #FDCB58;
+.footer-logo p {
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 .footer-links ul {
@@ -572,23 +573,23 @@ footer {
 }
 
 .footer-links ul li {
-    margin: 8px 0;
+    margin: 10px 0;
 }
 
 .footer-links ul li a {
     text-decoration: none;
-    color: #ddd;
-    transition: color 0.3s;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-    color: #FDCB58;
+    color: #ffcc00;
 }
 
 .footer-contact p {
+    font-size: 1rem;
     margin: 5px 0;
-    font-size: 0.9rem;
-    color: #ccc;
 }
 
 .footer-social .social-icons {
@@ -599,21 +600,21 @@ footer {
 }
 
 .footer-social .social-icons a {
-    color: #FDCB58;
+    color: white;
     font-size: 1.5rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social .social-icons a:hover {
     transform: scale(1.2);
+    color: #ffcc00;
 }
 
 .footer-bottom {
     text-align: center;
-    padding: 15px 0;
-    border-top: 1px solid #444;
-    margin-top: 20px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
-    color: #bbb;
+    opacity: 0.8;
 }
-
