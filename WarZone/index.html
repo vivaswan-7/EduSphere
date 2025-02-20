@@ -6,25 +6,30 @@
     <title>EduSphere</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <button id="backToTop" title="Go to top">↑</button>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#eduai-mentor"><i class="fa-solid fa-brain"></i> EduAI Mentor</a></li>
-                <li><a href="#career-ai"><i class="fa-solid fa-briefcase"></i> Career AI</a></li>
-                <li><a href="#skillforge"><i class="fa-solid fa-screwdriver-wrench"></i> SkillForge</a></li>
-                <li><a href="#educonnect"><i class="fa-solid fa-users"></i> EduConnect</a></li>
-                <li><a href="#immersive-learning"><i class="fa-solid fa-vr-cardboard"></i> Immersive Learning</a></li>
-            </ul>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#eduai-mentor"><i class="fa-solid fa-brain"></i> EduAI Mentor</a></li>
+                    <li><a href="#career-ai"><i class="fa-solid fa-briefcase"></i> Career AI</a></li>
+                    <li><a href="#skillforge"><i class="fa-solid fa-screwdriver-wrench"></i> SkillForge</a></li>
+                    <li><a href="#educonnect"><i class="fa-solid fa-users"></i> EduConnect</a></li>
+                    <li><a href="#immersive-learning"><i class="fa-solid fa-vr-cardboard"></i> Immersive Learning</a></li>
+                </ul>
+                <a href="#" class="register-btn"><i class="fa-solid fa-user-plus"></i> Register</a>
+            </div>
         </nav>
-    </header>
+    </header>     
     <main>
         <section id="home">
-            <h1>Welcome to EduSphere</h1>
+            <h1 id="typing-text">Welcome to EduSphere</h1>
             <p>EduSphere is an all-in-one AI-powered education platform designed to make learning accessible, engaging, and personalized. Whether you're a student, a professional, or a lifelong learner, EduSphere provides the tools you need to succeed.</p>
-            <a href="#" class="explore-link">Explore EduSphere</a>
+            <a href="#" class="explore-link-land">Explore EduSphere</a>
         </section>
         <section id="eduai-mentor">
             <h2>EduAI Mentor</h2>
@@ -36,7 +41,7 @@
                 <li>🔹 Multilingual support with real-time translations</li>
                 <li>🔹 Offline learning mode for accessibility</li>
             </ul>
-            <a href="#" class="explore-link">Explore EduAI Mentor</a>
+            <a href="#" class="explore-link-eduai">Explore EduAI Mentor</a>
         </section>
         <section id="career-ai">
             <h2>Career AI</h2>
@@ -47,7 +52,7 @@
                 <li>🔹 Industry-relevant skill-building courses</li>
                 <li>🔹 AI-generated certification exams</li>
             </ul>
-            <a href="#" class="explore-link">Explore Career AI</a>
+            <a href="#" class="explore-link-career">Explore Career AI</a>
         </section>
         <section id="skillforge">
             <h2>SkillForge</h2>
@@ -64,7 +69,7 @@
                     <li>🔹 Personalized learning playlists based on skill gaps</li>
                 </ul>
             </div>            
-            <a href="#" class="explore-link">Explore SkillForge</a>
+            <a href="#" class="explore-link-skill">Explore SkillForge</a>
         </section>
         <section id="educonnect">
             <h2>EduConnect</h2>

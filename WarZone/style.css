@@ -9,33 +9,82 @@ body {
     color: white;
 }
 
-header {
-    background: rgba(223, 9, 209, 0.8);
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
+header{
+    font-family: 'Poppins',sans-serif;
+}
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85); 
+    padding: 12px 30px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #444;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
 }
+
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.register-btn {
+    background: #007bff; 
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.register-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
 #home {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -63,9 +112,21 @@ nav ul li a {
     z-index: 1; 
 }
 
-#home h1, #home p, #home .explore-link {
+#home h1, #home p, .explore-link-land {
     position: relative;
     z-index: 2;
+}
+
+#typing-text::after {
+    content: '|'; 
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 #home h1 {
@@ -83,7 +144,7 @@ nav ul li a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#home .explore-link {
+.explore-link-land {
     display: inline-block;
     margin-top: 20px;
     font-size: 1.4rem;
@@ -96,7 +157,7 @@ nav ul li a {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#home .explore-link:hover {
+.explore-link-land:hover {
     background: #388E3C;
     transform: scale(1.1);
 }
@@ -148,7 +209,7 @@ section {
     transform: scale(1.05);
 }
 
-#eduai-mentor .explore-link {
+.explore-link-eduai {
     display: inline-block;
     padding: 12px 25px;
     margin-top: 20px;
@@ -161,7 +222,7 @@ section {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#eduai-mentor .explore-link:hover {
+.explore-link-eduai:hover {
     background: #e68900;
     transform: scale(1.1);
 }
@@ -216,7 +277,7 @@ section {
     transform: scale(1.05);
 }
 
-#career-ai .explore-link {
+.explore-link-career {
     display: inline-block;
     margin-top: 20px;
     font-size: 1.4rem;
@@ -229,7 +290,7 @@ section {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#career-ai .explore-link:hover {
+.explore-link-career:hover {
     background: #4B0082;
     color: #fff;
     transform: scale(1.1);
@@ -310,7 +371,7 @@ section {
     to { transform: translateX(-100%); }
 }
 
-#skillforge .explore-link {
+.explore-link-skill {
     display: inline-block;
     margin-top: 20px;
     font-size: 1.4rem;
@@ -323,7 +384,7 @@ section {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#skillforge .explore-link:hover {
+.explore-link-skill:hover {
     background: #4B0082;
     color: #fff;
     transform: scale(1.1);
@@ -440,10 +501,11 @@ section {
 
 .educonnect-explore {
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
     margin-top: 30px;
     padding: 12px 25px;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: bold;
     text-decoration: none;
     color: white;
     background: linear-gradient(135deg, #ff6f61, #ff8a65); 
@@ -453,9 +515,11 @@ section {
 }
 
 .educonnect-explore:hover {
-    background: linear-gradient(135deg, #ff8a65, #ff6f61);
-    transform: translateY(-3px);
+    background: linear-gradient(135deg, #a45a43, #9c281d);
+    color: #c7f305;
+    transform: translateY(-10px);
     box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
 }
 
 #immersive-learning {
@@ -520,20 +584,46 @@ section {
 
 #immersive-learning .explore-link {
     display: inline-block;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #ff6f61; 
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #b10606;
+    background: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 #immersive-learning .explore-link:hover {
-    background-color: #ff8a65; 
+    background: linear-gradient(135deg, #1e9800, #161212);
+    transform: translateY(-10px);
+    font-weight: bold;
+    box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.1);
+}
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* Hidden initially */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
+#backToTop:hover {
+    background-color: #0056b3;
+}
 
 footer {
     background: linear-gradient(135deg, #004aad, #00bcd4);
@@ -553,7 +643,6 @@ footer {
 
 .footer-container div {
     flex: 1;
-    min-width: 250px;
     margin: 20px;
 }
 
@@ -597,6 +686,13 @@ footer {
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
+}
+
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-social .social-icons a {
