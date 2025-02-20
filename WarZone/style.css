@@ -602,7 +602,7 @@ section {
     box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.3); 
     transform: scale(1.1);
 }
-/* Back to Top Button */
+
 #backToTop {
     position: fixed;
     bottom: 20px;
@@ -616,7 +616,7 @@ section {
     font-size: 24px;
     text-align: center;
     cursor: pointer;
-    display: none; /* Hidden initially */
+    display: none; 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
