@@ -69,6 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
     sr.reveal("#global-flags img", { origin: "top", interval: 150 });
 
     
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("nav ul");
 
+    hamburger.addEventListener("click", function() {
+        navMenu.classList.toggle("active");
 });
 
