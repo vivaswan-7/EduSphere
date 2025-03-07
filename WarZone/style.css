@@ -15,9 +15,9 @@ header{
 
 nav {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.85); 
+    background: rgba(255, 255, 255, 0.85);
     padding: 12px 30px;
     position: fixed;
     width: 100%;
@@ -26,6 +26,7 @@ nav {
     border-bottom: 2px solid #444;
 }
 
+/* Navigation Menu */
 .nav-container {
     display: flex;
     align-items: center;
@@ -40,10 +41,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
+/* Navigation Links */
 nav ul li a {
     text-decoration: none;
     color: #333;
@@ -60,6 +58,21 @@ nav ul li a {
 nav ul li a:hover {
     background: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .register-btn {
@@ -719,9 +732,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-    nav {
-        display:none;
-    }
+    
     
     #home h1 {
         font-size: 2.5rem;
@@ -733,9 +744,28 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav {
-        display:none;
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        text-align: right;
+        border-radius: 10px;
     }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
 
 
     #home {
