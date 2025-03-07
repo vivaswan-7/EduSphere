@@ -714,3 +714,97 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+/* Base Styles (No Change) */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    nav {
+        padding: 12px 15px;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .register-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #home {
+        padding: 15px;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .explore-link-land {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .educonnect-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 1.8rem;
+    }
+
+    #home p {
+        font-size: 0.9rem;
+    }
+
+    .explore-link-land {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .flags-marquee img {
+        width: 60px;
+    }
+
+    .educonnect-box {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
